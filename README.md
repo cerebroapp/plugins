@@ -1,4 +1,4 @@
-# Cerebro-Google
+# Cerebro-math
 
 > Basic math operations plugin for cerebro app
 
