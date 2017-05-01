@@ -1,8 +1,8 @@
 /* eslint no-eval: 0 */
 
-import React from 'react'
-import Preview from './Preview'
-import icon from './icon.png'
+const React = require('react')
+const Preview = require('./Preview')
+const icon = require('./icon.png')
 
 const MATH_REGEXP = /^[-+/*\d\s,\.\( )]+$/
 
