@@ -1,8 +1,8 @@
 /* eslint max-len: 0 */
-import React from 'react'
-import styles from './styles.css'
+const React = require('react')
+const styles = require('./styles.css')
 
-export default () => (
+module.exports = () => (
   <div className={styles.wrapper}>
     <p>
       The answer is indeterminate. Why? Because anything can be an anwer, see:
