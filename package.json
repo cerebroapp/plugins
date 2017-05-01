@@ -1,9 +1,9 @@
 {
-  "name": "cerebro-plugin",
+  "name": "cerebro-open-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Plugin for cerebro app that shows small url previews",
   "license": "MIT",
-  "repository": "KELiON/cerebro-plugin",
+  "repository": "KELiON/cerebro-open-web",
   "author": {
     "name": "Alexandr Subbotin",
     "email": "kelionweb@gmail.com",
@@ -22,7 +22,9 @@
   "main": "dist/index.js",
   "keywords": [
     "cerebro",
-    "cerebro-plugin"
+    "cerebro-plugin",
+    "url",
+    "preview"
   ],
   "devDependencies": {
     "babel-cli": "^6.18.0",
