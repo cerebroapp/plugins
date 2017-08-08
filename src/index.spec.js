@@ -1,6 +1,15 @@
 import { fn } from './index'
+import renderer from 'react-test-renderer'
 
 describe('Math plugin', () => {
+
+  it('callback is not called when term is noth math expression', () => {
+    const term = 'hello how are you'
+    const display = jest.fn()
+    fn({ term, display })
+    expect(display).not.toBeCalled()
+  })
+
   it('callback called with correct object', () => {
     const term = '5 + 6'
     const display = jest.fn()
@@ -35,6 +44,15 @@ describe('Math plugin', () => {
       icon: 'icon.png',
       title: '= indeterminate'
     }))
+  })
+
+  it('indeterminate results shows details', () => {
+    const term = '0 / 0'
+    const display = ({ getPreview }) => {
+      const tree = renderer.create(getPreview())
+      expect(tree).toMatchSnapshot()
+    }
+    fn({ term, display })
   })
 
   describe('with complex expressions: ', () => {

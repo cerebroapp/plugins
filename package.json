@@ -29,8 +29,19 @@
     "cerebro-tools": "^0.1.0",
     "cerebro-ui": "^0.0.16"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 100,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
   "devDependencies": {
-    "cerebro-scripts": "^0.0.17",
+    "cerebro-scripts": "^0.0.19",
     "rimraf": "^2.6.1"
   }
 }

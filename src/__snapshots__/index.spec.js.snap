@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Math plugin indeterminate results shows details 1`] = `
+<div
+  className={undefined}
+>
+  <p>
+    The answer is indeterminate. Why? Because anything can be an anwer, see:
+  </p>
+  <div
+    className={undefined}
+  >
+    <p>
+      Lets suppose that anwer is 
+      <span
+        className={undefined}
+      >
+        <sup>
+          x
+        </sup>
+        ⁄
+        <sub>
+          y
+        </sub>
+      </span>
+    </p>
+    <p>
+      If 
+      <span
+        className={undefined}
+      >
+        <sup>
+          0
+        </sup>
+        ⁄
+        <sub>
+          0
+        </sub>
+         = 
+        <sup>
+          x
+        </sup>
+        ⁄
+        <sub>
+          y
+        </sub>
+      </span>
+       then 
+      <span
+        className={undefined}
+      >
+        x·0 = y·0
+      </span>
+    </p>
+    <p>
+      And it is correct, because 
+      <span
+        className={undefined}
+      >
+        0 = 0
+      </span>
+      .
+    </p>
+    <p>
+      So any 
+      <span
+        className={undefined}
+      >
+        x
+      </span>
+       and 
+      <span
+        className={undefined}
+      >
+        y
+      </span>
+       could be an anwer.
+    </p>
+  </div>
+</div>
+`;
