@@ -5,7 +5,7 @@ import detectLanguage from './detectLanguage'
 import toLanguageCode from './toLanguageCode'
 import Preview from './Preview'
 import { Loading } from 'cerebro-ui'
-import { id, REGEXP } from './constants.js'
+import { id, REGEXP, DISPLAY_NAMES } from './constants.js'
 
 /**
  * Plugin to translate text using yandex translate
@@ -14,9 +14,10 @@ import { id, REGEXP } from './constants.js'
  * @param  {Object} options.actions
  * @param  {Function} options.display
  */
-const translatePlugin = ({ term, actions, display, config }) => {
+export const fn = ({ term, actions, display, config, settings }) => {
+  settings = settings || {}
   const match = term.match(REGEXP)
-  const userLang = config.get('lang')
+  const userLang = settings.defaultLanguage || config.get('lang')
   if (match) {
     // Show translation in results list
     // TODO: check why using const here throws undefined variable text in production build
@@ -71,6 +72,11 @@ const translatePlugin = ({ term, actions, display, config }) => {
   })
 }
 
-export default {
-  fn: translatePlugin,
+export const settings = {
+  defaultLanguage: {
+    label: 'Default language',
+    description: 'By default it is your system language',
+    type: 'option',
+    options: Object.keys(DISPLAY_NAMES).sort().map(key => ({value: key, label: DISPLAY_NAMES[key]}))
+  }
 }
