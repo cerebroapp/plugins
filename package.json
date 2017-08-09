@@ -1,6 +1,6 @@
 {
   "name": "cerebro-yandex-translate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cerebro plugin for language translations",
   "license": "MIT",
   "repository": "KELiON/cerebro-yandex-translate",
