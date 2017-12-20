@@ -9,7 +9,6 @@ export const fn = ({ term, display, actions }) => {
     const seachTerm = match[2]
     display({
       title: `Let me google ${seachTerm} for you`,
-      order: 15,
       onSelect: () => {
         const q = encodeURIComponent(seachTerm)
         actions.open(`http://lmgtfy.com/?q=${q}`)
