@@ -1,0 +1,58 @@
+.preview {
+  width: 100%;
+  height: 100%;
+  align-self: flex-start;
+}
+
+.preview audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.preview img {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 1.7em;
+  margin: 0 0 30px;
+  font-weight: 500;
+}
+
+.transcription {
+  opacity: .8;
+  margin: 0 10px;
+}
+
+.mainInfo {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.partOfSpeech {
+  font-size: 1.1em;
+  margin: 0 10px;
+}
+
+.images {
+  margin: 10px;
+}
+.images img {
+  max-width: 100%;
+}
+
+.soundButton {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+  width: 19px;
+  height: 16px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxOSAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MUJEREIyQUItRDY0NS00NDNDLTk1MjYtMEYzMEE3RDNBNkNDPC90aXRsZT48cGF0aCBkPSJNMTIuOTkgMy43NTlhLjc4MS43ODEgMCAwIDAtLjYwNC4yMzNsLS4xMDQuMTA4YS44MDMuODAzIDAgMCAwLS4wNTYgMS4wNjkgNC42MDEgNC42MDEgMCAwIDEgMS4wMzEgMi45MjcgNC42MzUgNC42MzUgMCAwIDEtLjkwOCAyLjc2NS44MDIuODAyIDAgMCAwIC4wNzYgMS4wNDFsLjEwNS4xMDdjLjE1LjE1LjM1My4yMzQuNTYyLjIzNGwuMDU4LS4wMDJhLjgxLjgxIDAgMCAwIC41OC0uMzE5IDYuMzY1IDYuMzY1IDAgMCAwIDEuMjY2LTMuODI3IDYuMzM2IDYuMzM2IDAgMCAwLTEuNDMyLTQuMDQ0Ljc5Mi43OTIgMCAwIDAtLjU3NC0uMjkyem0zLjQzOC0yLjQ3NWExMC4zMDQgMTAuMzA0IDAgMCAxIC4xNjggMTMuNDI2Ljc5Ni43OTYgMCAwIDEtLjU3NC4yODJsLS4wMzIuMDAxYS43OTcuNzk3IDAgMCAxLS41NjItLjIzM2wtLjEwNC0uMTA0YS44LjggMCAwIDEtLjA0NS0xLjA3OSA4LjU2MyA4LjU2MyAwIDAgMCAxLjk4Ni01LjQ4MiA4LjUzNCA4LjUzNCAwIDAgMC0yLjEyOC01LjY0NS44MDIuODAyIDAgMCAxIC4wMzEtMS4wOTRsLjEwNC0uMTA1YS43OTUuNzk1IDAgMCAxIDEuMTU2LjAzM3pNOCAzLjE2M3Y5LjY3NGwtMi42ODUtMi4zNDRBMiAyIDAgMCAwIDQgMTBIMlY2aDJjLjQ4NCAwIC45NTEtLjE3NSAxLjMxNS0uNDkzTDggMy4xNjN6TTguOTY4IDBjLS4yMzYgMC0uNDY5LjA4MS0uNjU4LjIzOEw0IDRIMWMtLjU2OSAwLTEgLjQzLTEgMXY2YzAgLjU3LjQzMSAxIDEgMWgzbDQuMzEgMy43NjJhMS4wMjUgMS4wMjUgMCAwIDAgMS4wOTcuMTM5Yy4zNjMtLjE2OS41OTMtLjUzMy41OTMtLjkzM1YxLjAzM0ExLjAzMSAxLjAzMSAwIDAgMCA4Ljk2OCAweiIgZmlsbD0iIzVkOWNlYyIgZmlsbC1ydWxlPSJldmVub2RkIiAvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 19px 16px;
+  border: 0;
+  background-color: transparent;
+}
+.soundButton:hover, .soundButton:focus {
+  opacity: .8;
+}
