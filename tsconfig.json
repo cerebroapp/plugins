@@ -1,0 +1,12 @@
+{
+  "include": [
+    "src",
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "strict": true,
+    "noImplicitAny": false,
+    "jsx": "react-jsx"
+  }
+}
