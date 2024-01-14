@@ -1,0 +1,52 @@
+{
+  "name": "@cerebroapp/cerebro-brew",
+  "version": "0.1.2",
+  "description": "Search and install homebrew packages",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github:cerebroapp/cerebro-brew"
+  },
+  "author": {
+    "name": "Luis Davim",
+    "email": "luis.davim@gmail.com",
+    "url": "github.com/luisdavim/"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "os": [
+    "darwin",
+    "osx"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "cerebro-build dev",
+    "build": "cerebro-build build",
+    "prepublishOnly": "cerebro-build clear && yarn build"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-plugin",
+    "cerebro-brew",
+    "homebrew",
+    "brew",
+    "macos"
+  ],
+  "devDependencies": {
+    "@types/memoizee": "^0.4.8",
+    "@types/node": "^18.11.9",
+    "cerebro-build": "^1.2.0"
+  },
+  "dependencies": {
+    "@cerebroapp/cerebro-ui": "^2.0.0-alpha.3",
+    "fzf": "^0.5.1",
+    "memoizee": "^0.4.15"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
