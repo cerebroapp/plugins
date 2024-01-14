@@ -1,0 +1,28 @@
+{
+  "name": "@cerebroapp/search",
+  "version": "1.1.1",
+  "description": "Use your favourite search engine in CerebroApp",
+  "main": "dist/index.js",
+  "author": "David Jiménez <dubisdev@gmail.com> (https://dubis.dev)",
+  "license": "MIT",
+  "keywords": [
+    "cerebroapp",
+    "search",
+    "cerebro-plugin"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "cerebro-build dev",
+    "build": "cerebro-build build",
+    "prepublish": "cerebro-build clear && yarn build"
+  },
+  "devDependencies": {
+    "cerebro-build": "^1.1.1"
+  },
+  "repository": "https://github.com/cerebroapp/search.git",
+  "dependencies": {
+    "@cerebroapp/cerebro-ui": "^2.0.0-alpha.3"
+  }
+}
