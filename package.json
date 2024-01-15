@@ -1,0 +1,47 @@
+{
+  "name": "cerebro-math",
+  "version": "1.0.0",
+  "description": "Basic math operations plugin for cerebro app",
+  "license": "MIT",
+  "repository": "KELiON/cerebro-google",
+  "author": {
+    "name": "Alexandr Subbotin",
+    "email": "kelionweb@gmail.com",
+    "url": "asubbotin.ru"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test --env=jsdom",
+    "prepublish": "rimraf ./dist && npm run build"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-extracted-plugin",
+    "math",
+    "calculations"
+  ],
+  "dependencies": {
+    "cerebro-tools": "^0.1.0",
+    "cerebro-ui": "^0.0.16"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 100,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
+  "devDependencies": {
+    "cerebro-scripts": "^0.0.19",
+    "rimraf": "^2.6.1"
+  }
+}
