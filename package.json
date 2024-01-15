@@ -1,0 +1,24 @@
+{
+  "name": "cerebro-let-me-google-for-you",
+  "description": "Cerebro plugin to open lmgtfy.com with your query",
+  "version": "0.1.1",
+  "dependencies": {
+    "cerebro-tools": "^0.1.8",
+    "cerebro-ui": "^0.0.16"
+  },
+  "devDependencies": {
+    "cerebro-scripts": "0.0.24"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-plugin"
+  ],
+  "scripts": {
+    "start": "cerebro-scripts start",
+    "build": "cerebro-scripts build",
+    "test": "cerebro-scripts test",
+    "clear": "cerebro-scripts clear",
+    "prepublish": "yarn clear && yarn build"
+  }
+}
