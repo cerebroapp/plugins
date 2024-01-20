@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+if [ $1 = "dev" ]; then
+  appname="Electron"
+else
+  appname="Cerebro"
+fi
+symlink="${HOME}/Library/Application Support/${appname}/plugins/node_modules/${PWD##*/}"
+echo "Create symlink: $symlink"
+ln -s "${PWD}" "$symlink"
+trap "echo \"Remove symlink: $symlink\" && rm \"$symlink\"" SIGHUP SIGINT SIGTERM
+./node_modules/.bin/webpack --watch
